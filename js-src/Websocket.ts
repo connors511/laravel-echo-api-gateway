@@ -147,6 +147,7 @@ export class Websocket {
                     data: {
                         channel: channel.name,
                         auth: response.data.auth,
+                        channel_data: response.data.channel_data
                     },
                 })
             }).catch((error) => {
