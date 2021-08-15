@@ -88,7 +88,7 @@ class Driver extends Broadcaster
         return $response;
     }
 
-    protected function generateSignaturePresence(string $channel, string $socketId, int $userId, array $userInfo = null): array
+    protected function generateSignaturePresence(string $channel, string $socketId, int|string $userId, array $userInfo = null): array
     {
         $userData = [
             'user_id' => $userId,
